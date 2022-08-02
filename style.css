@@ -1,18 +1,15 @@
 *{
     padding:0px;
     margin:0px;
-    box-sizing: inherit;
 }
 body {
-    padding: 0rem;
-    box-sizing: border-box;
     width: 100%;
     height: 100%;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: darkgrey;
     position: relative;
   }
   
@@ -32,7 +29,7 @@ body {
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: black;
+    background: #1d242a;
     display: block;
     position: absolute;
     right: 0;
@@ -41,55 +38,170 @@ body {
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: black;
-    color: black;
+    background-color: #1d242a;
+    color: white;
   }
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: black;
+    background-color: #1d242a;
     color: white;
   }
 .header {
     top: 0;
     left: 0;
-    background: url(887882.jpg) no-repeat center center fixed;
+    background: url(donutsmain.jpg) no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
     background-position: top;
     position: relative;
 }
-.heading{
+.text1{
     text-transform: uppercase;
-    color: black;
+    color: lightgray;
     display: inline-block;
     text-align: center;
-    top: 50%;
+    top: 45%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
     font-size: 75px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
+  }
+.text2 {
+  text-transform: uppercase;
+  color: lightgray;
+  display: inline-block;
+  text-align: center;
+  top: 55%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
 }
-.img {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    height:20px;
-    width:20px;
-}
-.menu {
-    display: inline-block;
-    text-align: center;
+/*
+.menugrid {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #eee;
+  margin:  0 auto;
+  float: left;
+  text-align: center;
 }
 .menu1 {
-    width: 50%;
-    height: 50%;
+  border: solid gray;
+  margin-left: 1rem;
+  margin-right: .5rem;
+  max-width: 50%;
+  max-height: 50%;
 }
 .menu2 {
-    width: 49%;
-    height: 50%;
+  border: solid gray;
+  margin-left: 1rem;
+  margin-right: .5rem;
+  max-width: 50%;
+  max-height: 50%;
+}*/
+.menugrid {
+  max-width: 100%;
+  background-color: #eee;
+  margin: 0 auto; 
+  margin-left: 6rem;}
+  .menugrid:not(:last-child) {
+    margin-bottom: 8rem; }
+  .menugrid::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .menugrid [class^="menu"] {
+    float: left;
+    text-align: center; }
+    .menugrid [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .menugrid .menu1 {
+    width: calc((100% - 6rem) / 2); 
+  }
+  .menugrid .menu2 {
+    width: calc((100% - 6rem) / 2); 
+  margin-left: 1rem;}
+.IL {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: darkgray;
 }
+.inside {
+  max-width: 100%;
+  background-color: #eee;
+  margin: 0 auto; 
+margin-left: 6rem;}
+  .inside:not(:last-child) {
+    margin-bottom: 8rem; }
+  .inside::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .inside [class^="col-"] {
+    background-color: orangered;
+    float: left;
+    height: 5rem;
+    text-align: center;
+    font-size: 2rem; }
+    .inside [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .inside .inside1 {
+    width: calc((100% - 6rem) / 2); 
+    border: solid black;
+  }
+  .inside .inside2 {
+    width: calc((100% - 6rem) / 2); 
+    border: solid black;
+
+  }
+  .inside .inside3 {
+    width: calc((100% - 6rem) / 2); 
+    border: solid black;
+
+  }
+  .inside .inside4 {
+    width: calc((100% - 6rem) / 2); 
+    border: solid black;
+
+  }
+/*.inside {
+    max-width: 100%;
+    background-color: #eee;
+    margin:  0 auto;
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+}
+.inside1 {
+  max-width: 45%;
+  max-height: 45%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.inside2 {
+  max-width: 45%;
+  max-height: 45%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.inside3 {
+  max-width: 45%;
+  max-height: 45%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.inside4 {
+  max-width: 45%;
+  max-height: 45%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}*/
 .footer {
     padding: 1em 0 1em 0 ;
     background-color: #1d242a;
@@ -98,11 +210,23 @@ body {
     font-size: 30px;
     color: white;
     text-align: center;
-
 }
 .facebook {
     font-size: 30px;
     color: white;
     text-align: center;
-
+}
+.Menu {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: darkgray;
+}
+.location {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: darkgray;
 }
